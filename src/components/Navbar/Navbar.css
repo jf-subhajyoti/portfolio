@@ -1,0 +1,41 @@
+.nav__wrapper {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.nav__left {
+    flex: 1;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.nav__name {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.nav__right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__list {
+    flex: 10;
+}
+
+.nav__list > ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-right: 4rem;
+}
+
+.nav__list > ul > li {
+    cursor: pointer;
+}
+
+.nav__list > ul > li:hover {
+    color: var(--orange);
+}
+
+.nav__btn {}
