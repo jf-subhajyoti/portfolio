@@ -1,0 +1,92 @@
+.intro {
+    display: flex;
+    justify-content: space-between;
+    height: 77vh;
+    margin-top: 6rem;
+}
+
+.intro__left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;  
+    gap: 2rem; 
+}
+
+.intro__left--name {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro__left--name > :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.intro__left--name > :nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.intro__left--name > :nth-child(3) {
+    color: var(--gray);
+    font-weight: 100;
+    font-size: .75rem;
+    margin-top: .5rem;
+}
+.intro__btn {
+    width: 6rem;
+    height: 2rem;
+}
+
+.intro__left--icon {
+    display: flex;
+    margin-top: 3rem;
+    gap: 0rem;
+}
+
+.intro__left--icon > * {
+    transform: scale(0.5);
+}
+
+.intro__left--icon > *:hover {
+    cursor: pointer;
+}
+
+.intro__right {
+    flex: 1;
+    position: relative;
+}
+
+.intro__right > * {
+    position: absolute;
+    z-index: 1;
+}
+
+.intro__right > :nth-child(1) {
+    transform: scale(1, 0.55);
+    left: -30%;
+    top: -81%;
+}
+
+.intro__right > :nth-child(2) {
+    transform: scale(.25);
+    top: -135%;
+    left: -50%;
+}
+
+.intro__right> :nth-child(3) {
+    transform: scale(0.65);
+    left: -30%;
+    top: -5%;
+}
+
+.floatingdiv__wrapper {
+    position: absolute;
+}
+
+.floatingdiv__wrapper--crown {
+    top: 50%;
+    left: 50%
+}
