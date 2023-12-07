@@ -36,6 +36,14 @@ const Intro = () => {
         <div className='floatingdiv__wrapper floatingdiv__wrapper--crown'>
           <FloatingDiv image={Crown} text1="Web" text2="Developer" />
         </div>
+        <div className="blur" style={{background: "rgba(238, 210, 255)"}}></div>
+        <div className="blur" style={{
+          background: "#C1F5FF",
+          top: '-2rem',
+          width: '21rem',
+          height: '11rem',
+          left: '-11rem',
+        }}></div>
       </div>
     </div>
   )
