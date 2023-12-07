@@ -34,7 +34,7 @@ const Intro = () => {
         <img src={Boy} alt="Boy" />
         <img src={GlassesEmoji} alt="glasses emoji" />
         <div className='floatingdiv__wrapper floatingdiv__wrapper--crown'>
-          <FloatingDiv image={Crown} text1="Web" text2="Developer" />
+          <FloatingDiv image={Crown} text1="Front-End" text2="Developer" />
         </div>
         <div className="blur" style={{background: "rgba(238, 210, 255)"}}></div>
         <div className="blur" style={{
