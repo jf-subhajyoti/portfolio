@@ -1,0 +1,38 @@
+.works__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.works__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.works__left--work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.works__left--work > span:nth-child(1) {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.works__left--work > span:nth-child(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+button.works__btn {
+    width: 8rem;
+}
+
+.works__right {
+    flex: 1;
+}
