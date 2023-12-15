@@ -5,6 +5,7 @@ import './App.css';
 import Intro from "./components/Info/Intro";
 import Experience from "./components/Experience/Experience";
 import Works from "./components/Works/Works";
+import Portfolio from "./components/Portfolio/Portfolio";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Intro />
       <Experience />
       <Works />
+      <Portfolio />
     </div>
   );
 }
