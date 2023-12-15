@@ -15,7 +15,7 @@ const Experience = () => {
     }
 
     return (
-        <div className='experience__Wrapper'>
+        <div className='experience__wrapper'>
             <div className="achievement">
                 <div className="circle">{calculateDifferenceInYears(employementDetailsCopy.dateOfJoiningOfFirstJob)}+</div>
                 <span>years</span>

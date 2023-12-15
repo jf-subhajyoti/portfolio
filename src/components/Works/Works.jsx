@@ -13,6 +13,7 @@ const Works = () => {
                     <span>Organisations & Brands</span>
                 </div>
                 <button className='button works__btn'>Download CV</button>
+                <div className="blur" style={{ background: "#ABF1FF94" }}></div>
             </div>
             <div className="works__right">
                 {

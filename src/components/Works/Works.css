@@ -10,6 +10,7 @@
     justify-content: center;
     gap: 1rem;
     flex: 1;
+    position: relative;
 }
 
 .works__left--work {
@@ -28,6 +29,13 @@
     color: var(--orange);
     font-size: 2.5rem;
     font-weight: bold;
+}
+
+.works__left .blur {
+    left: -6rem;
+    top: -6rem;
+    width: 20rem;
+    height: 15rem;
 }
 
 button.works__btn {
