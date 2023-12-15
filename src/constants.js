@@ -1,5 +1,7 @@
 import Nokia from './img/nokia.png';
 import JF from './img/j&f.png';
+import MovixThumbnail from './img/movix.png';
+import SketchboardThumbnail from './img/sketchboard.png';
 
 export const employementDetails = {
     dateOfJoiningOfFirstJob : '2021-06-16',
@@ -7,7 +9,7 @@ export const employementDetails = {
     workExperience: [
         {
             organisation: 'J&F India',
-            startDate: '2022/0601',
+            startDate: '2022/06/01',
             lastDate: 'Present',
             stillWorking: true,
             jobTitle: 'SDE-1',
@@ -25,3 +27,20 @@ export const employementDetails = {
         },
     ]
 }
+
+export const personalProject = [
+    {
+        name: 'Sketchboard',
+        thumbnail: SketchboardThumbnail,
+        techstack: {
+            'front-end': ['React', 'Redux', 'HTML', 'SCSS'],
+        }
+    },
+    {
+        name: 'Movix',
+        thumbnail: MovixThumbnail,
+        techstack: {
+            'front-end' : ['React', 'Redux', 'HTML', 'SCSS'],
+        }
+    }
+]
