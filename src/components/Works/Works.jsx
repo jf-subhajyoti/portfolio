@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Resume from '../../assets/resume.pdf';
 import { employementDetails } from '../../constants';
 
 import './Works.css';
@@ -12,7 +13,14 @@ const Works = () => {
                     <span>Been part of all these</span>
                     <span>Organisations & Brands</span>
                 </div>
-                <button className='button works__btn'>Download CV</button>
+                <a
+                    href={Resume}
+                    download="subhajyoti_resume"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <button className='button works__btn'>Download CV</button>
+                </a>
                 <div className="blur" style={{ background: "#ABF1FF94" }}></div>
             </div>
             <div className="works__right">
