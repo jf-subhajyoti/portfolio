@@ -42,7 +42,6 @@ const Works = () => {
                                 </div>
                             </div>
                         </div>
-
                     ))
                 }
             </div>
