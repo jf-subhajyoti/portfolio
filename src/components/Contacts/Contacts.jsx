@@ -11,35 +11,28 @@ const Contacts = () => {
   const form = useRef();
   const [disableSubmitBtn, setDisableSubmitBtn] = useState(false);
 
+  const alertConfig = {
+    position: "top-right",
+    autoClose: 3000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+  }
+
   const sendEmail = (e) => {
     setDisableSubmitBtn(true);
     e.preventDefault();
 
     emailjs.sendForm('service_w1s4w6j', 'template_3vjeukb', form.current, 'F0mSwZd1O1qcDN_o1')
     .then(() => {
-      toast.success('Email sent succesfully!!' , {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
+      toast.success('Email sent succesfully!!' , alertConfig);
       form.current.reset();
       setDisableSubmitBtn(false);
     }, (error) => {
-      toast.error(error.text, {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
+      toast.error(error.text, alertConfig);
       setDisableSubmitBtn(false);
     });
   };
