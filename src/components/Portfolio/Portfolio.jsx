@@ -4,7 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { personalProject } from '../../constants';
 
 import './Portfolio.css';
-import 'swiper/css';
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
 
 const Portfolio = () => {
   return (
