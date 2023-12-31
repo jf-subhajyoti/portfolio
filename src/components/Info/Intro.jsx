@@ -3,7 +3,6 @@ import React from 'react';
 import LinkedIn from '../../img/linkedin.png';
 import Github from '../../img/github.png';
 import Instagram from '../../img/instagram.png';
-
 import Paint from '../../img/paint.png';
 import Boy from '../../img/boy.webp';
 import Crown from '../../img/crown.png';
@@ -11,11 +10,13 @@ import GlassesEmoji from '../../img/glassesimoji.png';
 
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
 
+import { sectionIds } from '../../constants';
+
 import './Intro.css';
 
 const Intro = () => {
   return (
-    <div className='intro'>
+    <div id={sectionIds['home']} className='intro'>
       <div className="intro__left">
         <div className="intro__left--name">
           <span>Hey! I Am</span>

@@ -1,8 +1,9 @@
 .intro {
     display: flex;
     justify-content: space-between;
-    height: 77vh;
-    margin-top: 6rem;
+    height: 77%;
+    margin-top: 12rem;
+    margin-bottom: 6rem;
 }
 
 .intro__left {

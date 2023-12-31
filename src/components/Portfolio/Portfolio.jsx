@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import ProjectCard from '../ProjectCard/ProjectCard';
 
-import { personalProject } from '../../constants';
+import { personalProject, sectionIds } from '../../constants';
 
 import './Portfolio.css';
 import 'swiper/swiper-bundle.min.css'
@@ -11,7 +11,7 @@ import 'swiper/swiper.min.css'
 
 const Portfolio = () => {
   return (
-    <div className='portfolio__wrapper'>
+    <div id={sectionIds['portfolio']} className='portfolio__wrapper'>
       <span className='portfolio__wrapper--subHeading'>Recent Projects</span>
       <span className='portfolio__wrapper--heading'>Portfolio</span>
 

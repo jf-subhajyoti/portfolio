@@ -59,3 +59,10 @@ export const personalProject = [
         }
     }
 ]
+
+export const sectionIds = {
+    home: 'home',
+    experience: 'experience',
+    portfolio: 'portfolio',
+    contact: 'contact',
+}

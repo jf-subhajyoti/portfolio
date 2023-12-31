@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { employementDetails } from '../../constants';
+import { employementDetails, sectionIds } from '../../constants';
 import './Experience.css';
 
 const Experience = () => {
@@ -15,7 +15,7 @@ const Experience = () => {
     }
 
     return (
-        <div className='experience__wrapper'>
+        <div id={sectionIds['experience']} className='experience__wrapper'>
             <div className="achievement">
                 <div className="circle">{calculateDifferenceInYears(employementDetailsCopy.dateOfJoiningOfFirstJob)}+</div>
                 <span>years</span>

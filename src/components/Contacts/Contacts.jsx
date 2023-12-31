@@ -5,6 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import './Contacts.css';
+import { sectionIds } from '../../constants';
 
 const Contacts = () => {
 
@@ -37,7 +38,7 @@ const Contacts = () => {
     });
   };
   return (
-    <div className='contact__wrapper'>
+    <div id={sectionIds['contact']} className='contact__wrapper'>
       <div className="contact__wrapper--left">
         <div className="contact__title">
           <span>Get in touch</span>

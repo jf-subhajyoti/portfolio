@@ -30,8 +30,8 @@ const ProjectCard = ({project}) => {
                                     {
                                         techstack[tech]?.map((ele, index) => {
                                             return(
-                                                <div className="technology__item">
-                                                    <img key={index} src={ele.logo} alt={ele.name} />
+                                                <div key={index} className="technology__item">
+                                                    <img src={ele.logo} alt={ele.name} />
                                                 </div>
                                             )
                                         })
