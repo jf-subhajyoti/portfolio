@@ -67,14 +67,14 @@
 
 .intro__right > :nth-child(1) {
     transform: scale(1, 0.55);
-    left: -30%;
-    top: -81%;
+    left: -20%;
+    top: -136%;
 }
 
 .intro__right > :nth-child(2) {
     transform: scale(.25);
-    top: -135%;
-    left: -50%;
+    top: -212%;
+    left: -40%;
 }
 
 .intro__right> :nth-child(3) {
@@ -89,7 +89,7 @@
 
 .floatingdiv__wrapper--crown {
     top: 50%;
-    left: 50%
+    left: 58%
 }
 
 .blur {

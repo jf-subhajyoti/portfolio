@@ -24,7 +24,7 @@ const Navbar = () => {
             <div className='nav__wrapper'>
                 <div className="nav__left">
                     <div className="nav__name">Subhajyoti</div>
-                    <span>toggle</span>
+                    {/* <span>toggle</span> */}
                 </div>
                 <div className="nav__right">
                     <div className="nav__list">

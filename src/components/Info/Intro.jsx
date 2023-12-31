@@ -23,7 +23,7 @@ const Intro = () => {
           <span>Subhajyoti Naskar</span>
           <span>Front-end developer transforming ideas into captivating web interfaces with code, creativity, and user-centric design expertise.</span>
         </div>
-        <button className='button intro__btn'>Hire Me</button>
+        {/* <button className='button intro__btn'>Hire Me</button> */}
         <div className="intro__left--icon">
           <img src={Github} alt="Github" />
           <img src={LinkedIn} alt="LinkedIn" />
