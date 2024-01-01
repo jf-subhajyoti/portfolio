@@ -9,17 +9,21 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
 
+import { ThemeProvider } from "./ThemeContext";
+
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Intro />
-      <Experience />
-      <Works />
-      <Portfolio />
-      <Contacts />
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <Navbar />
+        <Intro />
+        <Experience />
+        <Works />
+        <Portfolio />
+        <Contacts />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 
