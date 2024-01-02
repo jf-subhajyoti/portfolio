@@ -9,21 +9,24 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
 
-import { ThemeProvider } from "./ThemeContext";
+import { useThemeContext } from "./ThemeContext";
 
 function App() {
+
+  const {darkTheme} = useThemeContext();
   return (
-    <ThemeProvider>
-      <div className="App">
-        <Navbar />
-        <Intro />
-        <Experience />
-        <Works />
-        <Portfolio />
-        <Contacts />
-        <Footer />
-      </div>
-    </ThemeProvider>
+    <div className="App" style={{
+      background: darkTheme ? 'black' : '',
+      color: darkTheme ? "white" : ''
+    }}>
+      <Navbar />
+      <Intro />
+      <Experience />
+      <Works />
+      <Portfolio />
+      <Contacts />
+      <Footer />
+    </div>
   );
 }
 

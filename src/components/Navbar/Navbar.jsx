@@ -1,10 +1,14 @@
 import React from 'react';
 
+import Toggle from '../Toogle/Toggle';
+
 import { sectionIds } from '../../constants';
+import { useThemeContext } from '../../ThemeContext';
 
 import './Navbar.css';
 
 const Navbar = () => {
+    const {darkTheme} = useThemeContext();
     const scrollTo = (id) => {
         const elem = document.getElementById(id);
         if(elem) {
@@ -21,10 +25,10 @@ const Navbar = () => {
     }
     return (
         <>
-            <div className='nav__wrapper'>
+            <div className='nav__wrapper' style={darkTheme ? { background: 'linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.85))'} : {}}>
                 <div className="nav__left">
                     <div className="nav__name">Subhajyoti</div>
-                    {/* <span>toggle</span> */}
+                    <Toggle />
                 </div>
                 <div className="nav__right">
                     <div className="nav__list">
