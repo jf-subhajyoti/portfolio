@@ -17,17 +17,23 @@ const Experience = () => {
     return (
         <div id={sectionIds['experience']} className='experience__wrapper'>
             <div className="achievement">
-                <div className="circle">{calculateDifferenceInYears(employementDetailsCopy.dateOfJoiningOfFirstJob)}+</div>
+                <div className="circle-outline">
+                    <div className="circle">{calculateDifferenceInYears(employementDetailsCopy.dateOfJoiningOfFirstJob)}+</div>
+                </div>
                 <span>years</span>
                 <span>Experience</span>
             </div>
             <div className="achievement">
-                <div className="circle">{employementDetailsCopy.totalNoOfProjects}+</div>
+                <div className="circle-outline">
+                    <div className="circle">{employementDetailsCopy.totalNoOfProjects}+</div>
+                </div>
                 <span>completed</span>
                 <span>Projects</span>
             </div>
             <div className="achievement">
-                <div className="circle">{employementDetailsCopy.workExperience.length}+</div>
+                <div className="circle-outline">
+                    <div className="circle">{employementDetailsCopy.workExperience.length}+</div>
+                </div>
                 <span>companies</span>
                 <span>Worked</span>
             </div>

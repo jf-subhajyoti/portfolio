@@ -12,7 +12,7 @@ const Toggle = () => {
 
     return (
         <div className='toggle'>
-            <div className="t-button" style={darkTheme ? {left: '2px'} : {right : '2px'}} onClick={updateTheme}></div>
+            <div title='Toggle Theme' className="t-button" style={darkTheme ? {left: '2px'} : {right : '2px'}} onClick={updateTheme}></div>
             <Moon className='toggle--icon' />
             <Sun className='toggle--icon' />
         </div>

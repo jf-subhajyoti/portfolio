@@ -25,7 +25,7 @@ const Navbar = () => {
     }
     return (
         <>
-            <div className='nav__wrapper' style={darkTheme ? { background: 'linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.85))'} : {}}>
+            <div className='nav__wrapper'>
                 <div className="nav__left">
                     <div className="nav__name">Subhajyoti</div>
                     <Toggle />

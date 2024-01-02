@@ -7,8 +7,6 @@
     margin-bottom: 8rem;
     margin-top: 4rem;
     position: relative;
-    animation-name: experience__wrapper--animation;
-    animation-duration: 4s;
 }
 
 .achievement {
@@ -19,6 +17,17 @@
 
 .achievement span:nth-of-type(2) {
     color: var(--orange);
+}
+
+.achievement .circle-outline {
+    width: 4.75rem;
+    height: 4.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #87e6fb, #ffc05c);
+    margin-bottom: 1rem;
 }
 
 .circle {
@@ -32,33 +41,5 @@
     font-size: 1.5rem;
     font-weight: bold;
     border-radius: 50%;
-    margin-bottom: 2rem;
-}
-
-.circle::before {
-    border-radius: 50%;
-    background-image: linear-gradient(to bottom, #87e6fb, #ffc05c);
-    content: '';
-    position: absolute;
-    top: -8px;
-    bottom: -8px;
-    right: -8px;
-    left: -8px;
-    z-index: -1;
-    box-shadow: var(--boxShadow);
-}
-
-@keyframes experience__wrapper--animation {
-    0% {
-        bottom: -1rem
-    }
-    50% {
-        bottom: -0.75rem;
-    }
-    75% {
-        bottom: -0.5rem;
-    }
-    100% {
-        bottom: 0rem;
-    }
+    color: var(--black);
 }
