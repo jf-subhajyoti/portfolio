@@ -3,12 +3,10 @@ import React from 'react';
 import Toggle from '../Toogle/Toggle';
 
 import { sectionIds } from '../../constants';
-import { useThemeContext } from '../../ThemeContext';
 
 import './Navbar.css';
 
 const Navbar = () => {
-    const {darkTheme} = useThemeContext();
     const scrollTo = (id) => {
         const elem = document.getElementById(id);
         if(elem) {
