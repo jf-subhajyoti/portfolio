@@ -43,3 +43,23 @@
     border-radius: 50%;
     color: var(--black);
 }
+
+@media only screen and (max-device-width : 1024px){
+    .experience__wrapper{
+        height: 18vh;
+}
+}
+
+@media only screen and (max-device-width : 767px){
+
+.experience__wrapper {
+    height: unset;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: -66px;
+}
+.achievement .circle-outline {
+    margin-bottom: 10px;
+}
+
+}

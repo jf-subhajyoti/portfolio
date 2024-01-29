@@ -25,3 +25,20 @@
     display: flex;
     gap: 2rem;
 }
+
+@media  only screen and  (max-device-width : 950px){
+   .footer{
+    padding-bottom: 61px;
+   }
+  }
+
+
+  @media  only screen and  (max-device-width : 767px){
+
+  .footer__content {
+    margin-top: 5rem;
+}
+.footer__content span{
+    font-size: 14px;
+}
+  }

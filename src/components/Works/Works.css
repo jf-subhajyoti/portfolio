@@ -63,8 +63,9 @@ button.works__btn {
     background: white;
     box-shadow: var(--smboxShadow);
     cursor: pointer;
-    transition: z-index 0s, height 0.3s, width 0.3s, border-radius 0.3s;
+    transition: z-index 0s, border-radius 0.3s;
 }
+
 
 .works__logoWrapper:hover {
     z-index: 2;
@@ -132,3 +133,39 @@ button.works__btn {
     font-weight: lighter;
     color: var(--gray);
 }
+
+
+
+@media  only screen and  (max-device-width : 767px){
+
+    .works__wrapper{
+     flex-direction: column;  
+    }
+    .works__left--work > span:nth-child(1){
+        font-size: 1rem;
+    }
+    .works__left--work > span:nth-child(2){
+        font-size: 1.5rem;
+    }
+    .works__logoWrapper:nth-child(2), .works__logoWrapper:nth-child(1){
+        transform: translate(-50%, 21%);
+    }
+    .works__wrapper {
+        margin-bottom: 14rem;
+    }
+    .works__logoWrapper:hover {
+        height: 7rem;
+        width: 17rem;
+        left: 48%;
+    }
+    .works__details .title {
+        font-size: 13px;
+    }
+    .works__details .description {
+        font-size: 14px;
+    }
+    .works__logoWrapper:nth-child(2):hover {
+       
+        left: 15%;
+    }
+    }
