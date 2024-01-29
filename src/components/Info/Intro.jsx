@@ -25,17 +25,9 @@ const Intro = () => {
         </div>
         {/* <button className='button intro__btn'>Hire Me</button> */}
         <div className="intro__left--icon">
-         <a href="">
-         <img src={Github} alt="Github" />
-         </a>
-         <a href="">
-         <img src={LinkedIn} alt="LinkedIn" />
-
-         </a>
-         <a href="">
-         <img src={Instagram} alt="Instagram" />
-         </a>
-
+          <img src={Github} alt="Github" />
+          <img src={LinkedIn} alt="LinkedIn" />
+          <img src={Instagram} alt="Instagram" />
         </div>
       </div>
       <div className="intro__right">
@@ -45,7 +37,7 @@ const Intro = () => {
         <div className='floatingdiv__wrapper floatingdiv__wrapper--crown'>
           <FloatingDiv image={Crown} text1="Front-End" text2="Developer" />
         </div>
-        <div className="blur" style={{background: "rgba(238, 210, 255)"}}></div>
+        <div className="blur" style={{ background: "rgba(238, 210, 255)" }}></div>
         <div className="blur" style={{
           background: "#C1F5FF",
           top: '-2rem',
